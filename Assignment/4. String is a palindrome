@@ -1,1 +1,13 @@
+def is_palindrome(s):
+    # Normalize the string by removing spaces and converting to lowercase
+    normalized_str = ''.join(s.split()).lower()
+    # Check if the string is equal to its reverse
+    return normalized_str == normalized_str[::-1]
+
+# Take input from the user
+user_input = input("Enter a string: ")
+
+# Check if the string is a palindrome and print the result
+result = is_palindrome(user_input)
+print(result)
 
