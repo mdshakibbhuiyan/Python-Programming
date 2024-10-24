@@ -1,1 +1,9 @@
+# Take input from the user
+s = input("Enter a string: ")
+
+# Count the number of digits
+digit_count = sum(c.isdigit() for c in s)
+
+# Print the result
+print(f"Total digits are: {digit_count}")
 
